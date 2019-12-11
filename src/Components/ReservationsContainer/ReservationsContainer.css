@@ -1,0 +1,5 @@
+.resy-container {
+  display: flex;
+  margin: 2vw;
+  flex-wrap: wrap;
+}

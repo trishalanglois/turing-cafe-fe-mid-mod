@@ -4,7 +4,7 @@ import './Card.css';
 const Card = ({ id, name, date, time, number }) => {
   return (
     <article>
-      <p>Name: {name}</p>
+      <h3>{name}'s Reservation</h3>
       <p>Date: {date}</p>
       <p>Time: {time}</p>
       <p>Number: {number}</p>

@@ -35,7 +35,7 @@ class Form extends Component {
 
   render() {
     return (
-      <>
+      <div className="reservation-form">
 
         <h2>Make a reservation</h2>
         <p>Name</p>
@@ -49,10 +49,10 @@ class Form extends Component {
 
         <p>Number of Guests</p>
         <input type="number" name="number" value={this.state.number} onChange={this.handleChange} />
+        <br />
+        <button className="form-button" onClick={this.sendReservation}>Submit</button>
 
-        <button onClick={this.sendReservation}>Submit</button>
-
-      </>
+      </div>
     )
   }
 }

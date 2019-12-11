@@ -48,16 +48,21 @@ class App extends Component {
       this.getUpdatedData();
     }
 
+    render() {
+      return (
+        <div className="App">
+          <h1 className='app-title'>Turing Cafe Reservations</h1>
+          <div className='resy-form'>
+            <Form submitReservation={this.submitReservation}/>
+          </div>
 
-  render() {
-    return (
-      <>
-        <Form submitReservation={this.submitReservation}/>
-        <ReservationsContainer
-          reservations={this.state.allReservations}/>
-      </>
-    )
-  }
+          <div className='resy-container'>
+          <ReservationsContainer
+            reservations={this.state.allReservations}/>
+          </div>
+          
+        </div>
+  )}
 }
 
 export default App;
