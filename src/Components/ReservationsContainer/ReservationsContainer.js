@@ -3,9 +3,9 @@ import './ReservationsContainer.css';
 import Card from '../Card/Card'
 
 
-const ReservationsContainer = ({ reservations }) => {
+const ReservationsContainer = (props) => {
 
-  return reservations.map(reservation => {
+  return props.reservations.map(reservation => {
     return (
       <Card
         id={reservation.id}

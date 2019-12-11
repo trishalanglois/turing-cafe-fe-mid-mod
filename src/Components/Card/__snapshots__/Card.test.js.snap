@@ -2,10 +2,10 @@
 
 exports[`Card should match the snapshot with all data passed correctly 1`] = `
 <article>
-  <p>
-    Name: 
+  <h3>
     Trisha
-  </p>
+    's Reservation
+  </h3>
   <p>
     Date: 
     10/22

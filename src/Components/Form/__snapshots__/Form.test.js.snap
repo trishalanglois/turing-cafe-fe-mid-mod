@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Form should match the snapshot with all data passed correctly 1`] = `
-<Fragment>
+<div
+  className="reservation-form"
+>
   <h2>
     Make a reservation
   </h2>
@@ -43,10 +45,12 @@ exports[`Form should match the snapshot with all data passed correctly 1`] = `
     type="number"
     value={null}
   />
+  <br />
   <button
+    className="form-button"
     onClick={[Function]}
   >
     Submit
   </button>
-</Fragment>
+</div>
 `;
