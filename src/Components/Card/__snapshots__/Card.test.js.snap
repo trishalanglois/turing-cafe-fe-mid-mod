@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot with all data passed correctly 1`] = `
+<article>
+  <p>
+    Name: 
+    Trisha
+  </p>
+  <p>
+    Date: 
+    10/22
+  </p>
+  <p>
+    Time: 
+    11:00
+  </p>
+  <p>
+    Number: 
+    9
+  </p>
+</article>
+`;
