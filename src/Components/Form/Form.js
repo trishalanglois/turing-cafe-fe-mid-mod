@@ -2,14 +2,35 @@ import React, { Component } from 'react';
 import './Form.css';
 
 class Form extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       name: '',
       date: '',
       time: '',
       number: null
     }
+  }
+
+  handleChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value
+    })
+  }
+
+  sendReservation = (event) => {
+    let newReservation = {...this.state};
+    this.props.submitReservation(newReservation);
+    this.clearInputs();
+  }
+
+  clearInputs = () => {
+    this.setState({
+      name: '',
+      date: '',
+      time: '',
+      number: null
+    })
   }
 
   render() {
@@ -28,6 +49,8 @@ class Form extends Component {
 
         <p>Number of Guests</p>
         <input type="number" name="number" value={this.state.number} onChange={this.handleChange} />
+
+        <button onClick={this.sendReservation}>Submit</button>
 
       </>
     )
