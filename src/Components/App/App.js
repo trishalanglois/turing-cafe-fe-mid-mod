@@ -20,6 +20,7 @@ class App extends Component {
             allReservations: data
           })
         )
+
     }
 
     getUpdatedData() {
@@ -44,8 +45,13 @@ class App extends Component {
       	body: JSON.stringify({...reservation, id: Date.now()}),
       })
       	.then(response => response.json())
+        .then(data => console.log(data))
       	.catch(error => console.log(error))
       this.getUpdatedData();
+    }
+
+    removeReservation = (event) => {
+      console.log('cancel button has been clicked');
     }
 
     render() {
@@ -60,7 +66,7 @@ class App extends Component {
           <ReservationsContainer
             reservations={this.state.allReservations}/>
           </div>
-          
+
         </div>
   )}
 }
