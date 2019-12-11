@@ -18,5 +18,10 @@ exports[`Card should match the snapshot with all data passed correctly 1`] = `
     Number: 
     9
   </p>
+  <button
+    className="cancel-button"
+  >
+    Cancel
+  </button>
 </article>
 `;

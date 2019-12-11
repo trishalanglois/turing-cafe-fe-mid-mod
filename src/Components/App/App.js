@@ -50,9 +50,20 @@ class App extends Component {
       this.getUpdatedData();
     }
 
-    removeReservation = (event) => {
-      console.log('cancel button has been clicked');
-    }
+    // removeReservation = (reservation) => {
+    //   fetch('http://localhost:3001/api/v1/reservations', {
+    //   	method: 'DELETE',
+    //   	headers: {
+    //   		'Content-Type': 'application/json'
+    //   	},
+    //   	body: JSON.stringify(reservation),
+    //   })
+    //   	.then(response => response.json())
+    //     .then(data => console.log(data))
+    //   	.catch(error => console.log(error))
+    //   this.getUpdatedData();
+    // }
+
 
     render() {
       return (
